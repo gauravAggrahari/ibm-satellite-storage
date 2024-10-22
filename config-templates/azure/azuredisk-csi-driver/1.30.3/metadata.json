@@ -51,7 +51,7 @@
         },
         {
             "name": "volume-snapshot",
-            "value": "false"
+            "value": "true"
         },
         {
             "name": "volume-availability",
