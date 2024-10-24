@@ -64,8 +64,6 @@ items:
       annotations:
         {{#useWorkloadIdentity}}
         azure.workload.identity/client-id: {{{workloadIdentityClientId}}}
-        {{/useWorkloadIdentity}}
-        {{#useWorkloadIdentity}}
         azure.workload.identity/tenant-id: {{{workloadIdentityTenantId}}}
         {{/useWorkloadIdentity}}
   - apiVersion: v1
@@ -82,8 +80,6 @@ items:
       annotations:
         {{#useWorkloadIdentity}}
         azure.workload.identity/client-id: {{{workloadIdentityClientId}}}
-        {{/useWorkloadIdentity}}
-        {{#useWorkloadIdentity}}
         azure.workload.identity/tenant-id: {{{workloadIdentityTenantId}}}
         {{/useWorkloadIdentity}}
   - kind: ClusterRole
