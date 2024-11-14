@@ -102,7 +102,7 @@
     },
     {
         "4.12": {
-            "status": "supported",
+            "status": "deprecated",
             "latest-revision": {
                 "revision": "15",
                 "release-date": "04 September 2024",
