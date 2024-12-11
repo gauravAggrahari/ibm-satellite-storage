@@ -93,7 +93,7 @@ items:
       labels:
         app.kubernetes.io/name: "redhat-odf-remote"
         app.kubernetes.io/version: "v4.16.0"
-        app.kubernetes.io/revision: "1"
+        app.kubernetes.io/revision: "2"
         volume-type: "block"
         storage-class-preference: "2"
         is-user-defined-class: "false"
