@@ -8,7 +8,7 @@
                 "cves": "CVE-2024-51744",
                 "golang": "1.22.9",
                 "ubi": "",
-                "new-features": [""],
+                "new-features": [],
                 "fixes": []
             },
             "previous-revision": {
