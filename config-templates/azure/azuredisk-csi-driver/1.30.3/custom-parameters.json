@@ -114,11 +114,12 @@
         "displayname": "Enable OpenTelemetry Tracing",
         "name": "enableOtelTracing",
         "type": "boolean",
+        "default": "false",
         "regex": "^(?:true|false)$",
         "min-length": 4,
         "max-length": 5,
         "supported-values": ["true", "false"],
-        "required": "false",
+        "required": "true",
         "mutable": "false"
     },
     {
@@ -140,11 +141,12 @@
         "displayname": "Use Host Network",
         "name": "useHostNetwork",
         "type": "boolean",
+        "default": "false",
         "regex": "^(?:true|false)$",
         "min-length": 4,
         "max-length": 5,
         "supported-values": ["true", "false"],
-        "required": "false",
+        "required": "true",
         "mutable": "false"
     }
 ]
