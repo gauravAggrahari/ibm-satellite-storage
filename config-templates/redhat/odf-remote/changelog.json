@@ -4,7 +4,7 @@
             "status": "supported",
             "latest-revision": {
                 "revision": "2",
-                "release-date": "12 December 2024",
+                "release-date": "13 December 2024",
                 "cves": "",
                 "golang": "1.22.7",
                 "ubi": "",
@@ -33,7 +33,7 @@
             "status": "supported",
             "latest-revision": {
                 "revision": "7",
-                "release-date": "12 December 2024",
+                "release-date": "13 December 2024",
                 "cves": "",
                 "golang": "1.21.13",
                 "ubi": "",
@@ -62,7 +62,7 @@
             "status": "supported",
             "latest-revision": {
                 "revision": "10",
-                "release-date": "12 December 2024",
+                "release-date": "13 December 2024",
                 "cves": "",
                 "golang": "1.21.13",
                 "ubi": "",
