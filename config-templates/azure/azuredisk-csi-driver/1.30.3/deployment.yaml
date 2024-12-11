@@ -28,8 +28,7 @@ items:
           "enableOtelTracing": "{{{enableOtelTracing}}}",
           "otelServiceName": "{{{otelServiceName}}}",
           "otelExporterEndpoint": "{{{otelExporterEndpoint}}}",
-          "useHostNetwork": "{{{useHostNetwork}}}",
-          "enableVolumeSnapshots": "{{{enableVolumeSnapshots}}}"
+          "useHostNetwork": "{{{useHostNetwork}}}"
         }
     kind: Secret
     metadata:
