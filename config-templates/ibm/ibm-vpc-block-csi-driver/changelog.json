@@ -4,8 +4,8 @@
             "status": "supported",
             "latest-revision": {
                 "revision": "9",
-                "release-date": "21 November 2024",
-                "cves": "",
+                "release-date": "13 December 2024",
+                "cves": "CVE-2024-51744",
                 "golang": "1.22.9",
                 "ubi": "",
                 "new-features": [""],

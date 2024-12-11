@@ -395,7 +395,7 @@ items:
                 runAsUser: 0
                 runAsGroup: 0
                 privileged: true
-              image: icr.io/ibm/ibm-vpc-block-csi-driver:v5.1.29
+              image: icr.io/ibm/ibm-vpc-block-csi-driver:v5.1.31
               imagePullPolicy: Always
               args:
                 - "--v=5"
@@ -650,7 +650,7 @@ items:
                   mountPath: /csi
             - name: iks-vpc-block-driver
               imagePullPolicy: Always
-              image: icr.io/ibm/ibm-vpc-block-csi-driver:v5.1.29
+              image: icr.io/ibm/ibm-vpc-block-csi-driver:v5.1.31
               securityContext:
                 privileged: false
                 allowPrivilegeEscalation: false
