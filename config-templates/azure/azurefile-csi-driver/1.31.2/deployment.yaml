@@ -30,7 +30,7 @@ items:
       namespace: kube-system
       labels:
         app.kubernetes.io/name: "azurefile-csi-driver"
-        app.kubernetes.io/version: "v1.31.0"
+        app.kubernetes.io/version: "v1.31.2"
     type: Opaque
   - apiVersion: storage.k8s.io/v1
     kind: CSIDriver
@@ -51,7 +51,6 @@ items:
       fsGroupPolicy: ReadWriteOnceWithFSType
       tokenRequests:
         - audience: api://AzureADTokenExchange
-
   - apiVersion: v1
     kind: ServiceAccount
     metadata:
@@ -157,8 +156,6 @@ items:
       - apiGroups: ["coordination.k8s.io"]
         resources: ["leases"]
         verbs: ["get", "watch", "list", "delete", "update", "create", "patch"]
-
-
   - kind: ClusterRole
     apiVersion: rbac.authorization.k8s.io/v1
     metadata:
@@ -205,7 +202,6 @@ items:
       - apiGroups: [""]
         resources: ["secrets"]
         verbs: ["get", "create"]
-
   - kind: ClusterRoleBinding
     apiVersion: rbac.authorization.k8s.io/v1
     metadata:
@@ -237,7 +233,6 @@ items:
       kind: ClusterRole
       name: azurefile-external-attacher-role
       apiGroup: rbac.authorization.k8s.io
-
   - kind: ClusterRoleBinding
     apiVersion: rbac.authorization.k8s.io/v1
     metadata:
@@ -253,7 +248,6 @@ items:
       kind: ClusterRole
       name: azurefile-external-snapshotter-role
       apiGroup: rbac.authorization.k8s.io
-
   - kind: ClusterRoleBinding
     apiVersion: rbac.authorization.k8s.io/v1
     metadata:
@@ -269,7 +263,6 @@ items:
       kind: ClusterRole
       name: azurefile-external-resizer-role
       apiGroup: rbac.authorization.k8s.io
-
   - kind: ClusterRoleBinding
     apiVersion: rbac.authorization.k8s.io/v1
     metadata:
@@ -285,7 +278,6 @@ items:
       kind: ClusterRole
       name: csi-azurefile-controller-secret-role
       apiGroup: rbac.authorization.k8s.io
-
   - kind: ClusterRoleBinding
     apiVersion: rbac.authorization.k8s.io/v1
     metadata:
@@ -301,7 +293,6 @@ items:
       kind: ClusterRole
       name: csi-azurefile-node-secret-role
       apiGroup: rbac.authorization.k8s.io
-
   - kind: DaemonSet
     apiVersion: apps/v1
     metadata:
@@ -476,8 +467,6 @@ items:
                 path: /dev
                 type: Directory
               name: device-dir
-
-
   - kind: Deployment
     apiVersion: apps/v1
     metadata:
@@ -698,4 +687,3 @@ items:
               hostPath:
                 path: /etc/kubernetes/
                 type: DirectoryOrCreate
-
